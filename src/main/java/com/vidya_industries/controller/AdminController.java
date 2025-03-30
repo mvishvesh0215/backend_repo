@@ -21,8 +21,8 @@ import com.vidya_industries.services.QuotationService;
 import com.vidya_industries.services.UserService;
 
 @RestController
-@CrossOrigin
 @RequestMapping("/admin")
+@CrossOrigin("https://vidya-industries.vercel.app/")
 public class AdminController {
 	
 	@Autowired

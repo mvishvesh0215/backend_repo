@@ -23,7 +23,7 @@ import com.vidya_industries.services.UserService;
 
 @RestController
 @RequestMapping("/customer")
-@CrossOrigin
+@CrossOrigin("https://vidya-industries.vercel.app/")
 public class CustomerController {
 	
 	@Autowired

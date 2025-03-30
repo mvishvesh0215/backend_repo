@@ -25,7 +25,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/home")
-@CrossOrigin
+@CrossOrigin("https://vidya-industries.vercel.app/")
 public class HomeController {
 	
 	@Autowired
