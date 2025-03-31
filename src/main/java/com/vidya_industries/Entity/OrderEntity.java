@@ -20,13 +20,13 @@ import lombok.Setter;
 @Table(name = "orders")
 public class OrderEntity extends BaseEntity{
 	
-	@Column(name = "paper_type",length = 50,nullable = false)
+	@Column(name = "paper_type",length = 2083,nullable = false)
 	private String paperType;
 	@Column(name = "layers",nullable = false)
 	private Integer layers;
 	@Column(name = "quantity",nullable = false)
 	private Integer quantity;
-	@Column(name = "dimensions",length = 50,nullable = false)
+	@Column(name = "dimensions",length = 2083,nullable = false)
 	private String dimensions;
 	@Column(name = "status",nullable = false)
 	@Enumerated(EnumType.STRING)

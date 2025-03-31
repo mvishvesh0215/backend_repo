@@ -20,15 +20,15 @@ import lombok.Setter;
 @Table(name = "quotations")
 public class QuotationEntity extends BaseEntity{
 	
-	@Column(name = "paper_type",length = 50,nullable = false)
+	@Column(name = "paper_type",length = 2083,nullable = false)
 	private String paperType;
 	@Column(name = "layers",nullable = false)
 	private Integer layers;
 	@Column(name = "quantity",nullable = false)
 	private Integer quantity;
-	@Column(name = "dimensions",length = 50,nullable = false)
+	@Column(name = "dimensions",length = 2083,nullable = false)
 	private String dimensions;
-	@Column(name = "message",length = 1000)
+	@Column(name = "message",length = 2083)
 	private String message;
 	@Column(name = "quotation_status",nullable = false)
 	@Enumerated(EnumType.STRING)

@@ -28,8 +28,8 @@ public class SecurityConfiguration {
 	        .authorizeHttpRequests
 	        (request -> 
 	        request.requestMatchers(
-	        		"/home/sign-up","/home/login","home/contact-us",
-					"/v*/api-doc*/**","/swagger-ui/**","/sendMail","/sendMail-With-Attachment").permitAll()
+	        		"/home/sign-up","/home/login","home/contact-us","admin/customers-analytics",
+					"/v*/api-doc*/**","/swagger-ui/**").permitAll()
 	        .requestMatchers(HttpMethod.OPTIONS).permitAll()
 	        	
 	       .requestMatchers("/customer/**")

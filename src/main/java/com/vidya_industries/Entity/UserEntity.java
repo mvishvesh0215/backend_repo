@@ -20,19 +20,19 @@ import lombok.ToString;
 @ToString
 public class UserEntity extends BaseEntity{
 	
-	@Column(name = "name",length = 25,nullable = false)
+	@Column(name = "name",length = 2083,nullable = false)
 	private String name;
-	@Column(name = "email",length = 100,nullable = false,unique = true)
+	@Column(name = "email",length = 2083,nullable = false,unique = true)
 	private String email;
-	@Column(name = "phone",length = 25,nullable = false,unique = true)
+	@Column(name = "phone",length = 2083,nullable = false,unique = true)
 	private String phone;
-	@Column(name = "position",length = 25,nullable = false)
+	@Column(name = "position",length = 2083,nullable = false)
 	private String position;
-	@Column(name = "company",length = 25,nullable = false)
+	@Column(name = "company",length = 2083,nullable = false)
 	private String company;
-	@Column(name = "address",length = 100,nullable = false)
+	@Column(name = "address",length = 2083,nullable = false)
 	private String address;
-	@Column(name = "password",length = 500,nullable = false)
+	@Column(name = "password",length = 2083,nullable = false)
 	private String password;
 	@Column(name = "role",nullable = false)
 	@Enumerated(EnumType.STRING)
